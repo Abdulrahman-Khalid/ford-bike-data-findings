@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8874eb5f906e4aa780425c2aae5c0447 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8874eb5f906e4aa780425c2aae5c0447" ></div>
+        
+</body>
+<script>    
+    
+            var map_8874eb5f906e4aa780425c2aae5c0447 = L.map(
+                "map_8874eb5f906e4aa780425c2aae5c0447",
+                {
+                    center: [37.8272, -122.2913],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6fd71caadf5c4d1ab6795b5761255e5e = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var marker_00950819db3d4dafabb7e22bd82386f1 = L.marker(
+                [37.3259984, -121.87712],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_96a1cdf4e27644f7b95d31ca3da821de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_00950819db3d4dafabb7e22bd82386f1.setIcon(icon_96a1cdf4e27644f7b95d31ca3da821de);
+        
+    
+        var popup_60cdb9f7cc36410ea80ad84e4c03be2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_590a354f04bd411cad78b6b4614bb703 = $(`<div id="html_590a354f04bd411cad78b6b4614bb703" style="width: 100.0%; height: 100.0%;">5th St at Virginia St</div>`)[0];
+            popup_60cdb9f7cc36410ea80ad84e4c03be2f.setContent(html_590a354f04bd411cad78b6b4614bb703);
+        
+
+        marker_00950819db3d4dafabb7e22bd82386f1.bindPopup(popup_60cdb9f7cc36410ea80ad84e4c03be2f)
+        ;
+
+        
+    
+    
+            marker_00950819db3d4dafabb7e22bd82386f1.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1b17636782548939802803d10a7f281 = L.marker(
+                [37.335885, -121.88566000000002],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_67fc274531bf4c779d59b711aaf3dc9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c1b17636782548939802803d10a7f281.setIcon(icon_67fc274531bf4c779d59b711aaf3dc9e);
+        
+    
+        var popup_4313365e2e0e46859d8b1ecdf8b7ff58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1005444f97a04817b32898db422671fb = $(`<div id="html_1005444f97a04817b32898db422671fb" style="width: 100.0%; height: 100.0%;">San Fernando St at 4th St</div>`)[0];
+            popup_4313365e2e0e46859d8b1ecdf8b7ff58.setContent(html_1005444f97a04817b32898db422671fb);
+        
+
+        marker_c1b17636782548939802803d10a7f281.bindPopup(popup_4313365e2e0e46859d8b1ecdf8b7ff58)
+        ;
+
+        
+    
+    
+            marker_c1b17636782548939802803d10a7f281.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acfabbef06a2492b858f2db96a7c0a62 = L.marker(
+                [37.3371223729, -121.88321471209998],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_fb50d0c21ccd46728e6315aa957829f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_acfabbef06a2492b858f2db96a7c0a62.setIcon(icon_fb50d0c21ccd46728e6315aa957829f0);
+        
+    
+        var popup_f7cca6cb12934ec0a4470f950351169d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41da1ac832fa4d7f9084b74b3b013e51 = $(`<div id="html_41da1ac832fa4d7f9084b74b3b013e51" style="width: 100.0%; height: 100.0%;">San Fernando St at 7th St</div>`)[0];
+            popup_f7cca6cb12934ec0a4470f950351169d.setContent(html_41da1ac832fa4d7f9084b74b3b013e51);
+        
+
+        marker_acfabbef06a2492b858f2db96a7c0a62.bindPopup(popup_f7cca6cb12934ec0a4470f950351169d)
+        ;
+
+        
+    
+    
+            marker_acfabbef06a2492b858f2db96a7c0a62.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_319e434c7db74ca6833c36b8c7c3d9ff = L.marker(
+                [37.8688126, -122.258764],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_3277d554636b484183b60682f2804597 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_319e434c7db74ca6833c36b8c7c3d9ff.setIcon(icon_3277d554636b484183b60682f2804597);
+        
+    
+        var popup_43ddfbdb46264639a54e697e407086ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b42c097dca32411dac38b7a1a9c1f9e3 = $(`<div id="html_b42c097dca32411dac38b7a1a9c1f9e3" style="width: 100.0%; height: 100.0%;">Bancroft Way at Telegraph Ave</div>`)[0];
+            popup_43ddfbdb46264639a54e697e407086ef.setContent(html_b42c097dca32411dac38b7a1a9c1f9e3);
+        
+
+        marker_319e434c7db74ca6833c36b8c7c3d9ff.bindPopup(popup_43ddfbdb46264639a54e697e407086ef)
+        ;
+
+        
+    
+    
+            marker_319e434c7db74ca6833c36b8c7c3d9ff.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2918c39546e4bdf829892bd6401e521 = L.marker(
+                [37.8693603, -122.2543374],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_b93a157a5a794829a0bc16362fbd96d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_f2918c39546e4bdf829892bd6401e521.setIcon(icon_b93a157a5a794829a0bc16362fbd96d4);
+        
+    
+        var popup_bcbe3e69ab9b4c3e9c2fee765bd9c915 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fc4a53dd0b54a8bb45b2e22ee45e3ec = $(`<div id="html_9fc4a53dd0b54a8bb45b2e22ee45e3ec" style="width: 100.0%; height: 100.0%;">Bancroft Way at College Ave</div>`)[0];
+            popup_bcbe3e69ab9b4c3e9c2fee765bd9c915.setContent(html_9fc4a53dd0b54a8bb45b2e22ee45e3ec);
+        
+
+        marker_f2918c39546e4bdf829892bd6401e521.bindPopup(popup_bcbe3e69ab9b4c3e9c2fee765bd9c915)
+        ;
+
+        
+    
+    
+            marker_f2918c39546e4bdf829892bd6401e521.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d834da7458434c98a81e74b42f2dc499 = L.marker(
+                [37.342725, -121.895617],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_ca9f9e9d73f74b28b78aae66c16ecb89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_d834da7458434c98a81e74b42f2dc499.setIcon(icon_ca9f9e9d73f74b28b78aae66c16ecb89);
+        
+    
+        var popup_4bf53edb0ac5437188aad9e36476eae8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60604719dc7a4d95a9ea574ae1f69483 = $(`<div id="html_60604719dc7a4d95a9ea574ae1f69483" style="width: 100.0%; height: 100.0%;">Ryland Park</div>`)[0];
+            popup_4bf53edb0ac5437188aad9e36476eae8.setContent(html_60604719dc7a4d95a9ea574ae1f69483);
+        
+
+        marker_d834da7458434c98a81e74b42f2dc499.bindPopup(popup_4bf53edb0ac5437188aad9e36476eae8)
+        ;
+
+        
+    
+    
+            marker_d834da7458434c98a81e74b42f2dc499.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a53667276c64b72bd769c080266bade = L.marker(
+                [37.333955, -121.877349],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_9061244249844f9baa3bf8e032604373 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8a53667276c64b72bd769c080266bade.setIcon(icon_9061244249844f9baa3bf8e032604373);
+        
+    
+        var popup_67fd6933a53044dd85dc696f8e187f91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53f646615db044e39444b961110dd854 = $(`<div id="html_53f646615db044e39444b961110dd854" style="width: 100.0%; height: 100.0%;">San Salvador St at 9th St</div>`)[0];
+            popup_67fd6933a53044dd85dc696f8e187f91.setContent(html_53f646615db044e39444b961110dd854);
+        
+
+        marker_8a53667276c64b72bd769c080266bade.bindPopup(popup_67fd6933a53044dd85dc696f8e187f91)
+        ;
+
+        
+    
+    
+            marker_8a53667276c64b72bd769c080266bade.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4610aba4f614c67ab55a6e64ef194f9 = L.marker(
+                [37.3322326, -121.9125165],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_a9edb9e031494dbea923c2167d2efa7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e4610aba4f614c67ab55a6e64ef194f9.setIcon(icon_a9edb9e031494dbea923c2167d2efa7d);
+        
+    
+        var popup_cdd1584e5f9d4bc8a0dd5ebe4fa71c48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_011b34d5b08b4a1fbf298949e851e0b2 = $(`<div id="html_011b34d5b08b4a1fbf298949e851e0b2" style="width: 100.0%; height: 100.0%;">Julian St at The Alameda</div>`)[0];
+            popup_cdd1584e5f9d4bc8a0dd5ebe4fa71c48.setContent(html_011b34d5b08b4a1fbf298949e851e0b2);
+        
+
+        marker_e4610aba4f614c67ab55a6e64ef194f9.bindPopup(popup_cdd1584e5f9d4bc8a0dd5ebe4fa71c48)
+        ;
+
+        
+    
+    
+            marker_e4610aba4f614c67ab55a6e64ef194f9.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b57b77b007840259322bd259d868b37 = L.marker(
+                [37.8751116929, -122.2605532408],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_9156c7339454427da2d3399dd0182a7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2b57b77b007840259322bd259d868b37.setIcon(icon_9156c7339454427da2d3399dd0182a7c);
+        
+    
+        var popup_a125a026edec4f9b9ec62461b4d34cef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6708f9cb53842f7a1060840c55e52f2 = $(`<div id="html_b6708f9cb53842f7a1060840c55e52f2" style="width: 100.0%; height: 100.0%;">Hearst Ave at Euclid Ave</div>`)[0];
+            popup_a125a026edec4f9b9ec62461b4d34cef.setContent(html_b6708f9cb53842f7a1060840c55e52f2);
+        
+
+        marker_2b57b77b007840259322bd259d868b37.bindPopup(popup_a125a026edec4f9b9ec62461b4d34cef)
+        ;
+
+        
+    
+    
+            marker_2b57b77b007840259322bd259d868b37.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19acab3abd804bd6b3cc02d8a9659abe = L.marker(
+                [37.3411320355, -121.8928438425],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_10f0a1fef62c4792a156b2abb2fe60b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_19acab3abd804bd6b3cc02d8a9659abe.setIcon(icon_10f0a1fef62c4792a156b2abb2fe60b5);
+        
+    
+        var popup_79a19d83b2f14425babea993eb4f1dbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cffa1b39698147d7b46fd4120ae0db3e = $(`<div id="html_cffa1b39698147d7b46fd4120ae0db3e" style="width: 100.0%; height: 100.0%;">2nd St at Julian St</div>`)[0];
+            popup_79a19d83b2f14425babea993eb4f1dbf.setContent(html_cffa1b39698147d7b46fd4120ae0db3e);
+        
+
+        marker_19acab3abd804bd6b3cc02d8a9659abe.bindPopup(popup_79a19d83b2f14425babea993eb4f1dbf)
+        ;
+
+        
+    
+    
+            marker_19acab3abd804bd6b3cc02d8a9659abe.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_365216c16f994adb99659284be485655 = L.marker(
+                [37.86604310000001, -122.2588044],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_68aeaa1213654faf9b7e0bcc607ad2f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_365216c16f994adb99659284be485655.setIcon(icon_68aeaa1213654faf9b7e0bcc607ad2f2);
+        
+    
+        var popup_c463a2bc937341b99d6722ead1bc0244 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8450cf585ffd418b88a6d2f337088af4 = $(`<div id="html_8450cf585ffd418b88a6d2f337088af4" style="width: 100.0%; height: 100.0%;">Haste St at Telegraph Ave</div>`)[0];
+            popup_c463a2bc937341b99d6722ead1bc0244.setContent(html_8450cf585ffd418b88a6d2f337088af4);
+        
+
+        marker_365216c16f994adb99659284be485655.bindPopup(popup_c463a2bc937341b99d6722ead1bc0244)
+        ;
+
+        
+    
+    
+            marker_365216c16f994adb99659284be485655.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae7aeaf4dea3442485c26eba1d4e4ef1 = L.marker(
+                [37.8664179405, -122.25379943850001],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_c64657597ead40de81543a4b5ea5ee71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ae7aeaf4dea3442485c26eba1d4e4ef1.setIcon(icon_c64657597ead40de81543a4b5ea5ee71);
+        
+    
+        var popup_468acc8ebf354119bec4f9251f3b045f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0132e247d17f471f9c4092d940c85111 = $(`<div id="html_0132e247d17f471f9c4092d940c85111" style="width: 100.0%; height: 100.0%;">Haste St at College Ave</div>`)[0];
+            popup_468acc8ebf354119bec4f9251f3b045f.setContent(html_0132e247d17f471f9c4092d940c85111);
+        
+
+        marker_ae7aeaf4dea3442485c26eba1d4e4ef1.bindPopup(popup_468acc8ebf354119bec4f9251f3b045f)
+        ;
+
+        
+    
+    
+            marker_ae7aeaf4dea3442485c26eba1d4e4ef1.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b866822b2aa4c6d9ac3234630307ab7 = L.marker(
+                [37.3361883003, -121.8892765045],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_d4e6595402fe40c8a61467c78fecc690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_6b866822b2aa4c6d9ac3234630307ab7.setIcon(icon_d4e6595402fe40c8a61467c78fecc690);
+        
+    
+        var popup_f97e9226f39a495392dbc00e4c50f34c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93afc23375b2449aa39b1f7846ef9788 = $(`<div id="html_93afc23375b2449aa39b1f7846ef9788" style="width: 100.0%; height: 100.0%;">Fountain Alley at S 2nd St</div>`)[0];
+            popup_f97e9226f39a495392dbc00e4c50f34c.setContent(html_93afc23375b2449aa39b1f7846ef9788);
+        
+
+        marker_6b866822b2aa4c6d9ac3234630307ab7.bindPopup(popup_f97e9226f39a495392dbc00e4c50f34c)
+        ;
+
+        
+    
+    
+            marker_6b866822b2aa4c6d9ac3234630307ab7.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55f3b06da93a42e4ad048f0b8032b04d = L.marker(
+                [37.3319323, -121.9048882],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_177dcdebf752431aba001426b8e42bd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_55f3b06da93a42e4ad048f0b8032b04d.setIcon(icon_177dcdebf752431aba001426b8e42bd7);
+        
+    
+        var popup_048c1ad889a04d06b533874f73ae7339 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbed74ece17e4356ad4d15c286818221 = $(`<div id="html_bbed74ece17e4356ad4d15c286818221" style="width: 100.0%; height: 100.0%;">The Alameda at Bush St</div>`)[0];
+            popup_048c1ad889a04d06b533874f73ae7339.setContent(html_bbed74ece17e4356ad4d15c286818221);
+        
+
+        marker_55f3b06da93a42e4ad048f0b8032b04d.bindPopup(popup_048c1ad889a04d06b533874f73ae7339)
+        ;
+
+        
+    
+    
+            marker_55f3b06da93a42e4ad048f0b8032b04d.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d87d66a1c6f4d56b79cec18e6796b8e = L.marker(
+                [37.3336577, -121.90858590000002],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_0a615bf140e841cd892faaf80ade80c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1d87d66a1c6f4d56b79cec18e6796b8e.setIcon(icon_0a615bf140e841cd892faaf80ade80c7);
+        
+    
+        var popup_ad9e0bcd6abf4d29ba3a0d3f55a4b824 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aca0ea5821824d898d33ea707421766b = $(`<div id="html_aca0ea5821824d898d33ea707421766b" style="width: 100.0%; height: 100.0%;">Morrison Ave at Julian St</div>`)[0];
+            popup_ad9e0bcd6abf4d29ba3a0d3f55a4b824.setContent(html_aca0ea5821824d898d33ea707421766b);
+        
+
+        marker_1d87d66a1c6f4d56b79cec18e6796b8e.bindPopup(popup_ad9e0bcd6abf4d29ba3a0d3f55a4b824)
+        ;
+
+        
+    
+    
+            marker_1d87d66a1c6f4d56b79cec18e6796b8e.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d66765f2d514ea38e03ae2a94944c0c = L.marker(
+                [37.3391456, -121.8841054],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_6229d9275ac5408b8c31ae2b804df93c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1d66765f2d514ea38e03ae2a94944c0c.setIcon(icon_6229d9275ac5408b8c31ae2b804df93c);
+        
+    
+        var popup_1119aaf7b9bb4d7d94336d7820145410 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b90cc9b67c3249e9baaf5e483fe7b6c2 = $(`<div id="html_b90cc9b67c3249e9baaf5e483fe7b6c2" style="width: 100.0%; height: 100.0%;">Santa Clara St at 7th St</div>`)[0];
+            popup_1119aaf7b9bb4d7d94336d7820145410.setContent(html_b90cc9b67c3249e9baaf5e483fe7b6c2);
+        
+
+        marker_1d66765f2d514ea38e03ae2a94944c0c.bindPopup(popup_1119aaf7b9bb4d7d94336d7820145410)
+        ;
+
+        
+    
+    
+            marker_1d66765f2d514ea38e03ae2a94944c0c.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60e468b31cbd484da2a74b7af33259a3 = L.marker(
+                [37.333798, -121.886943],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_cbfd09f4018e4feda73c5a879f66bdd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_60e468b31cbd484da2a74b7af33259a3.setIcon(icon_cbfd09f4018e4feda73c5a879f66bdd7);
+        
+    
+        var popup_6920312f38f24ab196ee35108c213da1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cca05f7e8b504eaa8aca5c5a6600bae1 = $(`<div id="html_cca05f7e8b504eaa8aca5c5a6600bae1" style="width: 100.0%; height: 100.0%;">Paseo De San Antonio at 2nd St</div>`)[0];
+            popup_6920312f38f24ab196ee35108c213da1.setContent(html_cca05f7e8b504eaa8aca5c5a6600bae1);
+        
+
+        marker_60e468b31cbd484da2a74b7af33259a3.bindPopup(popup_6920312f38f24ab196ee35108c213da1)
+        ;
+
+        
+    
+    
+            marker_60e468b31cbd484da2a74b7af33259a3.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_870fe4e7c40c4c23a9138c4e8b933130 = L.marker(
+                [37.7838993571, -122.40844488139999],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_7b063725a7e648fd87cc562eaf0a6d01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_870fe4e7c40c4c23a9138c4e8b933130.setIcon(icon_7b063725a7e648fd87cc562eaf0a6d01);
+        
+    
+        var popup_2f09a9f497a849078aa0f4409279f20d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccc2bda6d98e414e8577c993fd9a7d1e = $(`<div id="html_ccc2bda6d98e414e8577c993fd9a7d1e" style="width: 100.0%; height: 100.0%;">Powell St BART Station (Market St at 5th St)</div>`)[0];
+            popup_2f09a9f497a849078aa0f4409279f20d.setContent(html_ccc2bda6d98e414e8577c993fd9a7d1e);
+        
+
+        marker_870fe4e7c40c4c23a9138c4e8b933130.bindPopup(popup_2f09a9f497a849078aa0f4409279f20d)
+        ;
+
+        
+    
+    
+            marker_870fe4e7c40c4c23a9138c4e8b933130.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33e0d96c5d384f2cb50d711b7e536fb9 = L.marker(
+                [37.870139, -122.268422],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_4e621dc771564203bfeed3bc772c1ffb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_33e0d96c5d384f2cb50d711b7e536fb9.setIcon(icon_4e621dc771564203bfeed3bc772c1ffb);
+        
+    
+        var popup_d2111f7862e2475988d6271b7871437a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af6ab50af9cf415e8436ce4a23c2aee1 = $(`<div id="html_af6ab50af9cf415e8436ce4a23c2aee1" style="width: 100.0%; height: 100.0%;">Downtown Berkeley BART</div>`)[0];
+            popup_d2111f7862e2475988d6271b7871437a.setContent(html_af6ab50af9cf415e8436ce4a23c2aee1);
+        
+
+        marker_33e0d96c5d384f2cb50d711b7e536fb9.bindPopup(popup_d2111f7862e2475988d6271b7871437a)
+        ;
+
+        
+    
+    
+            marker_33e0d96c5d384f2cb50d711b7e536fb9.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59665809debf47fc8fb3b50e06db0560 = L.marker(
+                [37.786375268600004, -122.40490436549999],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_a8aa2be1c8fa4ac19c9fc347749a9b23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_59665809debf47fc8fb3b50e06db0560.setIcon(icon_a8aa2be1c8fa4ac19c9fc347749a9b23);
+        
+    
+        var popup_c22274b24b954aa281405b599f85136a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9947000e88e420e934eb9937c2be29c = $(`<div id="html_d9947000e88e420e934eb9937c2be29c" style="width: 100.0%; height: 100.0%;">Powell St BART Station (Market St at 4th St)</div>`)[0];
+            popup_c22274b24b954aa281405b599f85136a.setContent(html_d9947000e88e420e934eb9937c2be29c);
+        
+
+        marker_59665809debf47fc8fb3b50e06db0560.bindPopup(popup_c22274b24b954aa281405b599f85136a)
+        ;
+
+        
+    
+    
+            marker_59665809debf47fc8fb3b50e06db0560.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95d6901ce603487e9045d85876d0c3e3 = L.marker(
+                [37.332038681, -121.8817663193],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_9d09abf26c224516ace932ccaa2f6607 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_95d6901ce603487e9045d85876d0c3e3.setIcon(icon_9d09abf26c224516ace932ccaa2f6607);
+        
+    
+        var popup_43d66055825047f292b9437b5b6a1148 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a10ca7aefa3949b991564ddf1b138230 = $(`<div id="html_a10ca7aefa3949b991564ddf1b138230" style="width: 100.0%; height: 100.0%;">5th St at San Salvador St</div>`)[0];
+            popup_43d66055825047f292b9437b5b6a1148.setContent(html_a10ca7aefa3949b991564ddf1b138230);
+        
+
+        marker_95d6901ce603487e9045d85876d0c3e3.bindPopup(popup_43d66055825047f292b9437b5b6a1148)
+        ;
+
+        
+    
+    
+            marker_95d6901ce603487e9045d85876d0c3e3.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9d38894ffff4bac9b18a9fe038f85de = L.marker(
+                [37.8624644, -122.26479109999998],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_0f6ea17fb94c4062966c4ee132c23a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_b9d38894ffff4bac9b18a9fe038f85de.setIcon(icon_0f6ea17fb94c4062966c4ee132c23a8c);
+        
+    
+        var popup_85cbd80d64cc4dca9d77e434475a45f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29ae3a3e05584d94ab3c0472decac53f = $(`<div id="html_29ae3a3e05584d94ab3c0472decac53f" style="width: 100.0%; height: 100.0%;">Parker St at Fulton St</div>`)[0];
+            popup_85cbd80d64cc4dca9d77e434475a45f8.setContent(html_29ae3a3e05584d94ab3c0472decac53f);
+        
+
+        marker_b9d38894ffff4bac9b18a9fe038f85de.bindPopup(popup_85cbd80d64cc4dca9d77e434475a45f8)
+        ;
+
+        
+    
+    
+            marker_b9d38894ffff4bac9b18a9fe038f85de.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49ec2cfdf94e498f9d7044c9f3aa4845 = L.marker(
+                [37.776619, -122.417385],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_fb0280345dd1461299e3424041deee2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_49ec2cfdf94e498f9d7044c9f3aa4845.setIcon(icon_fb0280345dd1461299e3424041deee2a);
+        
+    
+        var popup_cf6ede164eed4ac2bd4df6d5ed52375f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fbf1e78dc544bcb81155f6ead784c9f = $(`<div id="html_0fbf1e78dc544bcb81155f6ead784c9f" style="width: 100.0%; height: 100.0%;">Market St at 10th St</div>`)[0];
+            popup_cf6ede164eed4ac2bd4df6d5ed52375f.setContent(html_0fbf1e78dc544bcb81155f6ead784c9f);
+        
+
+        marker_49ec2cfdf94e498f9d7044c9f3aa4845.bindPopup(popup_cf6ede164eed4ac2bd4df6d5ed52375f)
+        ;
+
+        
+    
+    
+            marker_49ec2cfdf94e498f9d7044c9f3aa4845.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82f8fd1842fa48d1b37dc5880e5cf01c = L.marker(
+                [37.3291186681, -121.90457582469999],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_e80816193ebd44c984564b5290fbd940 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_82f8fd1842fa48d1b37dc5880e5cf01c.setIcon(icon_e80816193ebd44c984564b5290fbd940);
+        
+    
+        var popup_4b3c1a15ce9e425a80681c6246aca23d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21463775d30a4eaabba4c34f369dfe14 = $(`<div id="html_21463775d30a4eaabba4c34f369dfe14" style="width: 100.0%; height: 100.0%;">Cahill Park</div>`)[0];
+            popup_4b3c1a15ce9e425a80681c6246aca23d.setContent(html_21463775d30a4eaabba4c34f369dfe14);
+        
+
+        marker_82f8fd1842fa48d1b37dc5880e5cf01c.bindPopup(popup_4b3c1a15ce9e425a80681c6246aca23d)
+        ;
+
+        
+    
+    
+            marker_82f8fd1842fa48d1b37dc5880e5cf01c.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184d9f5f215e4b84a2583fd0992987ae = L.marker(
+                [37.8717192, -122.2730677],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_68ba82f38217472c86c30d4185afca4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_184d9f5f215e4b84a2583fd0992987ae.setIcon(icon_68ba82f38217472c86c30d4185afca4c);
+        
+    
+        var popup_1cfc80df0dbc482cb833015f78ad9c15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c55f6038224475eb0c2c84ff7ce0877 = $(`<div id="html_5c55f6038224475eb0c2c84ff7ce0877" style="width: 100.0%; height: 100.0%;">MLK Jr Way at University Ave</div>`)[0];
+            popup_1cfc80df0dbc482cb833015f78ad9c15.setContent(html_5c55f6038224475eb0c2c84ff7ce0877);
+        
+
+        marker_184d9f5f215e4b84a2583fd0992987ae.bindPopup(popup_1cfc80df0dbc482cb833015f78ad9c15)
+        ;
+
+        
+    
+    
+            marker_184d9f5f215e4b84a2583fd0992987ae.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de1d6dc925cc47daa38e675832d4b78b = L.marker(
+                [37.8045623549, -122.2717380524],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_2030bd09341a4e049d3b582917433baf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_de1d6dc925cc47daa38e675832d4b78b.setIcon(icon_2030bd09341a4e049d3b582917433baf);
+        
+    
+        var popup_8b36f343f32f486bb73436a92b4a24f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c5833810d504b11ab5e9d8cda5f0ac2 = $(`<div id="html_9c5833810d504b11ab5e9d8cda5f0ac2" style="width: 100.0%; height: 100.0%;">Frank H Ogawa Plaza</div>`)[0];
+            popup_8b36f343f32f486bb73436a92b4a24f9.setContent(html_9c5833810d504b11ab5e9d8cda5f0ac2);
+        
+
+        marker_de1d6dc925cc47daa38e675832d4b78b.bindPopup(popup_8b36f343f32f486bb73436a92b4a24f9)
+        ;
+
+        
+    
+    
+            marker_de1d6dc925cc47daa38e675832d4b78b.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dc77e950b48438bb72684a5e0f44386 = L.marker(
+                [37.8618037, -122.2535687],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_1df483cafce346cbbf6abc78c8c08cdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_3dc77e950b48438bb72684a5e0f44386.setIcon(icon_1df483cafce346cbbf6abc78c8c08cdd);
+        
+    
+        var popup_db5b37f1396847909610450d32497a12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a15b19da562a40e39587d28dc3cd2eda = $(`<div id="html_a15b19da562a40e39587d28dc3cd2eda" style="width: 100.0%; height: 100.0%;">Derby St at College Ave</div>`)[0];
+            popup_db5b37f1396847909610450d32497a12.setContent(html_a15b19da562a40e39587d28dc3cd2eda);
+        
+
+        marker_3dc77e950b48438bb72684a5e0f44386.bindPopup(popup_db5b37f1396847909610450d32497a12)
+        ;
+
+        
+    
+    
+            marker_3dc77e950b48438bb72684a5e0f44386.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b883a90490ab4416b05e74aa312d213d = L.marker(
+                [37.8677892, -122.26589640000002],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_cf5b215009814b6bab8b51dae4cff4fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_b883a90490ab4416b05e74aa312d213d.setIcon(icon_cf5b215009814b6bab8b51dae4cff4fc);
+        
+    
+        var popup_a731c1b9715a44318f772e2529927246 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9c3b2fca30a47e0bc3b3f4825371903 = $(`<div id="html_a9c3b2fca30a47e0bc3b3f4825371903" style="width: 100.0%; height: 100.0%;">Fulton St at Bancroft Way</div>`)[0];
+            popup_a731c1b9715a44318f772e2529927246.setContent(html_a9c3b2fca30a47e0bc3b3f4825371903);
+        
+
+        marker_b883a90490ab4416b05e74aa312d213d.bindPopup(popup_a731c1b9715a44318f772e2529927246)
+        ;
+
+        
+    
+    
+            marker_b883a90490ab4416b05e74aa312d213d.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1ea41bac908488fad997cc455518e22 = L.marker(
+                [37.7810737, -122.4117382],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_18c18e4768ff47b2a95710ab95379752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_b1ea41bac908488fad997cc455518e22.setIcon(icon_18c18e4768ff47b2a95710ab95379752);
+        
+    
+        var popup_b69506e64db84b57bd8d40becdc5839a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49a121d44b494ff0ad724bc76478ae1d = $(`<div id="html_49a121d44b494ff0ad724bc76478ae1d" style="width: 100.0%; height: 100.0%;">Civic Center/UN Plaza BART Station (Market St at McAllister St)</div>`)[0];
+            popup_b69506e64db84b57bd8d40becdc5839a.setContent(html_49a121d44b494ff0ad724bc76478ae1d);
+        
+
+        marker_b1ea41bac908488fad997cc455518e22.bindPopup(popup_b69506e64db84b57bd8d40becdc5839a)
+        ;
+
+        
+    
+    
+            marker_b1ea41bac908488fad997cc455518e22.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da2a9a31368f42ecb02969979ad7e9d0 = L.marker(
+                [37.336802, -121.8940901],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_4a9f05f8073b4e989b27ef5108ac2eef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_da2a9a31368f42ecb02969979ad7e9d0.setIcon(icon_4a9f05f8073b4e989b27ef5108ac2eef);
+        
+    
+        var popup_09e7d92a69f740dbb3546732d284014d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a188d0539fe3421ca8911e7a3a2484d3 = $(`<div id="html_a188d0539fe3421ca8911e7a3a2484d3" style="width: 100.0%; height: 100.0%;">San Pedro Square</div>`)[0];
+            popup_09e7d92a69f740dbb3546732d284014d.setContent(html_a188d0539fe3421ca8911e7a3a2484d3);
+        
+
+        marker_da2a9a31368f42ecb02969979ad7e9d0.bindPopup(popup_09e7d92a69f740dbb3546732d284014d)
+        ;
+
+        
+    
+    
+            marker_da2a9a31368f42ecb02969979ad7e9d0.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2eeadf1ea9ff4f0b89834f84abd69323 = L.marker(
+                [37.33839520000001, -121.8807965],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_50508e8d3c14493f8c619f4e72fa8d97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2eeadf1ea9ff4f0b89834f84abd69323.setIcon(icon_50508e8d3c14493f8c619f4e72fa8d97);
+        
+    
+        var popup_56a6c433f7724f75a772f1587f40bd30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e938a328239e47d4b41a32496899f2a6 = $(`<div id="html_e938a328239e47d4b41a32496899f2a6" style="width: 100.0%; height: 100.0%;">9th St at San Fernando St</div>`)[0];
+            popup_56a6c433f7724f75a772f1587f40bd30.setContent(html_e938a328239e47d4b41a32496899f2a6);
+        
+
+        marker_2eeadf1ea9ff4f0b89834f84abd69323.bindPopup(popup_56a6c433f7724f75a772f1587f40bd30)
+        ;
+
+        
+    
+    
+            marker_2eeadf1ea9ff4f0b89834f84abd69323.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96927f27c6bb449ebc2815fed3834e87 = L.marker(
+                [37.77588, -122.39317],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_e94eae873dd54c7589131b7110a9765b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_96927f27c6bb449ebc2815fed3834e87.setIcon(icon_e94eae873dd54c7589131b7110a9765b);
+        
+    
+        var popup_d279b5f42b654534a39280ae7850a5fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d56db941f234778b0f7514cfbd32e3b = $(`<div id="html_7d56db941f234778b0f7514cfbd32e3b" style="width: 100.0%; height: 100.0%;">Berry St at 4th St</div>`)[0];
+            popup_d279b5f42b654534a39280ae7850a5fe.setContent(html_7d56db941f234778b0f7514cfbd32e3b);
+        
+
+        marker_96927f27c6bb449ebc2815fed3834e87.bindPopup(popup_d279b5f42b654534a39280ae7850a5fe)
+        ;
+
+        
+    
+    
+            marker_96927f27c6bb449ebc2815fed3834e87.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2efca423012f43ebb03fbdc1ffd742b1 = L.marker(
+                [37.8053183, -122.2948365],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_e63b5de1c337471bad1a3f838f416ec7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2efca423012f43ebb03fbdc1ffd742b1.setIcon(icon_e63b5de1c337471bad1a3f838f416ec7);
+        
+    
+        var popup_620139bb958d40c99cfb36b2f8bbd83d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e492fc0a5a144bdcb30f6ec8007f146f = $(`<div id="html_e492fc0a5a144bdcb30f6ec8007f146f" style="width: 100.0%; height: 100.0%;">West Oakland BART Station</div>`)[0];
+            popup_620139bb958d40c99cfb36b2f8bbd83d.setContent(html_e492fc0a5a144bdcb30f6ec8007f146f);
+        
+
+        marker_2efca423012f43ebb03fbdc1ffd742b1.bindPopup(popup_620139bb958d40c99cfb36b2f8bbd83d)
+        ;
+
+        
+    
+    
+            marker_2efca423012f43ebb03fbdc1ffd742b1.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32645e78a6fe45febc00326aa14cfe14 = L.marker(
+                [37.337391, -121.886995],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_20d7b468857e4404a444446409695526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_32645e78a6fe45febc00326aa14cfe14.setIcon(icon_20d7b468857e4404a444446409695526);
+        
+    
+        var popup_90957916c870437db0ea2354ff57e7bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_288eb42feb154c48a8b72707f18816fe = $(`<div id="html_288eb42feb154c48a8b72707f18816fe" style="width: 100.0%; height: 100.0%;">San Jose City Hall</div>`)[0];
+            popup_90957916c870437db0ea2354ff57e7bb.setContent(html_288eb42feb154c48a8b72707f18816fe);
+        
+
+        marker_32645e78a6fe45febc00326aa14cfe14.bindPopup(popup_90957916c870437db0ea2354ff57e7bb)
+        ;
+
+        
+    
+    
+            marker_32645e78a6fe45febc00326aa14cfe14.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_413ddb44c8d54ce299360252149781e6 = L.marker(
+                [37.8690599, -122.270556],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_19bcbe40d8f2482c8f36a67d39e77fc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_413ddb44c8d54ce299360252149781e6.setIcon(icon_19bcbe40d8f2482c8f36a67d39e77fc0);
+        
+    
+        var popup_17d9749ea24d45cc9845579ef6262cdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a769d85d5f34844813d1c9fc473f726 = $(`<div id="html_4a769d85d5f34844813d1c9fc473f726" style="width: 100.0%; height: 100.0%;">Berkeley Civic Center</div>`)[0];
+            popup_17d9749ea24d45cc9845579ef6262cdc.setContent(html_4a769d85d5f34844813d1c9fc473f726);
+        
+
+        marker_413ddb44c8d54ce299360252149781e6.bindPopup(popup_17d9749ea24d45cc9845579ef6262cdc)
+        ;
+
+        
+    
+    
+            marker_413ddb44c8d54ce299360252149781e6.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f51c7c14f7a46b0ae7c62f610064e58 = L.marker(
+                [37.86584660000001, -122.26744309999998],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_5037380fd5dc422ab8eb311e60252ad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7f51c7c14f7a46b0ae7c62f610064e58.setIcon(icon_5037380fd5dc422ab8eb311e60252ad6);
+        
+    
+        var popup_c919c2ca7bad46639ef6b6e6af90bfd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_080c081ba69a4ba0b1e327f00b437192 = $(`<div id="html_080c081ba69a4ba0b1e327f00b437192" style="width: 100.0%; height: 100.0%;">Channing Way at Shattuck Ave</div>`)[0];
+            popup_c919c2ca7bad46639ef6b6e6af90bfd2.setContent(html_080c081ba69a4ba0b1e327f00b437192);
+        
+
+        marker_7f51c7c14f7a46b0ae7c62f610064e58.bindPopup(popup_c919c2ca7bad46639ef6b6e6af90bfd2)
+        ;
+
+        
+    
+    
+            marker_7f51c7c14f7a46b0ae7c62f610064e58.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f724bdbec8e4599acb69abf552ad552 = L.marker(
+                [37.7787677, -122.4159292],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_235bdfe6291f46f0892ba652fb2d1089 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_0f724bdbec8e4599acb69abf552ad552.setIcon(icon_235bdfe6291f46f0892ba652fb2d1089);
+        
+    
+        var popup_01efa25faadf495cbc709447b1171a33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97b9c3c0f5c245219ead3e76169296bf = $(`<div id="html_97b9c3c0f5c245219ead3e76169296bf" style="width: 100.0%; height: 100.0%;">San Francisco Public Library (Grove St at Hyde St)</div>`)[0];
+            popup_01efa25faadf495cbc709447b1171a33.setContent(html_97b9c3c0f5c245219ead3e76169296bf);
+        
+
+        marker_0f724bdbec8e4599acb69abf552ad552.bindPopup(popup_01efa25faadf495cbc709447b1171a33)
+        ;
+
+        
+    
+    
+            marker_0f724bdbec8e4599acb69abf552ad552.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42ccb4cac9d947d085e1a23658991b6a = L.marker(
+                [37.7704074, -122.39119840000002],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_2004df75b9ff434d9b6771e88e6a00f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_42ccb4cac9d947d085e1a23658991b6a.setIcon(icon_2004df75b9ff434d9b6771e88e6a00f7);
+        
+    
+        var popup_77ac2c3a03f64a96965e6bd9da4fe049 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed450e0c8c494dee803aa7d78497762f = $(`<div id="html_ed450e0c8c494dee803aa7d78497762f" style="width: 100.0%; height: 100.0%;">4th St at Mission Bay Blvd S</div>`)[0];
+            popup_77ac2c3a03f64a96965e6bd9da4fe049.setContent(html_ed450e0c8c494dee803aa7d78497762f);
+        
+
+        marker_42ccb4cac9d947d085e1a23658991b6a.bindPopup(popup_77ac2c3a03f64a96965e6bd9da4fe049)
+        ;
+
+        
+    
+    
+            marker_42ccb4cac9d947d085e1a23658991b6a.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a634a2f837624d5d82b0da44863fde50 = L.marker(
+                [37.7973195, -122.2653199],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_ef265ec085e54498aaa934b228d23bcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_a634a2f837624d5d82b0da44863fde50.setIcon(icon_ef265ec085e54498aaa934b228d23bcd);
+        
+    
+        var popup_90c917297fe041d6a0a01c3c1ee63488 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0f77c4330cc43a7820e94d75cfd5421 = $(`<div id="html_a0f77c4330cc43a7820e94d75cfd5421" style="width: 100.0%; height: 100.0%;">Lake Merritt BART Station</div>`)[0];
+            popup_90c917297fe041d6a0a01c3c1ee63488.setContent(html_a0f77c4330cc43a7820e94d75cfd5421);
+        
+
+        marker_a634a2f837624d5d82b0da44863fde50.bindPopup(popup_90c917297fe041d6a0a01c3c1ee63488)
+        ;
+
+        
+    
+    
+            marker_a634a2f837624d5d82b0da44863fde50.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eaa0a021a35a4d8ca6545fdc9e6dabee = L.marker(
+                [37.8723555, -122.2664467],
+                {}
+            ).addTo(map_8874eb5f906e4aa780425c2aae5c0447);
+        
+    
+            var icon_f53f59e1fcfa4a98b56aa8ce3d82ece0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_eaa0a021a35a4d8ca6545fdc9e6dabee.setIcon(icon_f53f59e1fcfa4a98b56aa8ce3d82ece0);
+        
+    
+        var popup_afeab2fcc77743f38a454cbda4a055ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d06de49545466dbec407ac2443493a = $(`<div id="html_a7d06de49545466dbec407ac2443493a" style="width: 100.0%; height: 100.0%;">University Ave at Oxford St</div>`)[0];
+            popup_afeab2fcc77743f38a454cbda4a055ce.setContent(html_a7d06de49545466dbec407ac2443493a);
+        
+
+        marker_eaa0a021a35a4d8ca6545fdc9e6dabee.bindPopup(popup_afeab2fcc77743f38a454cbda4a055ce)
+        ;
+
+        
+    
+    
+            marker_eaa0a021a35a4d8ca6545fdc9e6dabee.bindTooltip(
+                `<div>
+                     click here
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

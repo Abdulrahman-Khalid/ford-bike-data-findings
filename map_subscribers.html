@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b0e6bbf24414819aed63742c118b027 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9b0e6bbf24414819aed63742c118b027" ></div>
+        
+</body>
+<script>    
+    
+            var map_9b0e6bbf24414819aed63742c118b027 = L.map(
+                "map_9b0e6bbf24414819aed63742c118b027",
+                {
+                    center: [37.8272, -122.2913],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e291b0da2f104d47b8b718708207ad8a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var marker_cdc67eaa592b401dab635f707260b5d8 = L.marker(
+                [37.776619, -122.417385],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_0ca119db85a946adab076c1be4af96ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_cdc67eaa592b401dab635f707260b5d8.setIcon(icon_0ca119db85a946adab076c1be4af96ef);
+        
+    
+        var popup_da2bab61c21b4799959bfb0c03c4d30f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61bc32fd7fb641cea8033d6cf3fc22ef = $(`<div id="html_61bc32fd7fb641cea8033d6cf3fc22ef" style="width: 100.0%; height: 100.0%;">Market St at 10th St</div>`)[0];
+            popup_da2bab61c21b4799959bfb0c03c4d30f.setContent(html_61bc32fd7fb641cea8033d6cf3fc22ef);
+        
+
+        marker_cdc67eaa592b401dab635f707260b5d8.bindPopup(popup_da2bab61c21b4799959bfb0c03c4d30f)
+        ;
+
+        
+    
+    
+            marker_cdc67eaa592b401dab635f707260b5d8.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edce1a7f00584f59ba36d757ac48f1ca = L.marker(
+                [37.77588, -122.39317],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_00fed83e847e4b368f4a66ed8aeecfef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_edce1a7f00584f59ba36d757ac48f1ca.setIcon(icon_00fed83e847e4b368f4a66ed8aeecfef);
+        
+    
+        var popup_5a6a9939f86f4661b258d21d16d6c4b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfa47ff4b5aa49a88ef8b129facde4b7 = $(`<div id="html_dfa47ff4b5aa49a88ef8b129facde4b7" style="width: 100.0%; height: 100.0%;">Berry St at 4th St</div>`)[0];
+            popup_5a6a9939f86f4661b258d21d16d6c4b2.setContent(html_dfa47ff4b5aa49a88ef8b129facde4b7);
+        
+
+        marker_edce1a7f00584f59ba36d757ac48f1ca.bindPopup(popup_5a6a9939f86f4661b258d21d16d6c4b2)
+        ;
+
+        
+    
+    
+            marker_edce1a7f00584f59ba36d757ac48f1ca.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_062a7e922f0d461cabfec4bb1e7b63d5 = L.marker(
+                [37.77663920000001, -122.3955263],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_ca8bfee3290b424e87b20ba74d851c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_062a7e922f0d461cabfec4bb1e7b63d5.setIcon(icon_ca8bfee3290b424e87b20ba74d851c41);
+        
+    
+        var popup_bcebcafa6d6d4b8bb94b1295857fa17d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f58d1d8912b3466eb6a95827157507a8 = $(`<div id="html_f58d1d8912b3466eb6a95827157507a8" style="width: 100.0%; height: 100.0%;">San Francisco Caltrain Station 2  (Townsend St at 4th St)</div>`)[0];
+            popup_bcebcafa6d6d4b8bb94b1295857fa17d.setContent(html_f58d1d8912b3466eb6a95827157507a8);
+        
+
+        marker_062a7e922f0d461cabfec4bb1e7b63d5.bindPopup(popup_bcebcafa6d6d4b8bb94b1295857fa17d)
+        ;
+
+        
+    
+    
+            marker_062a7e922f0d461cabfec4bb1e7b63d5.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11ce53d54a5240179bfdf5ab33cd3fff = L.marker(
+                [37.776598, -122.395282],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_ed43cebc4a7d4a57ace72f0aee4ea275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_11ce53d54a5240179bfdf5ab33cd3fff.setIcon(icon_ed43cebc4a7d4a57ace72f0aee4ea275);
+        
+    
+        var popup_444b64dfe975455aa1aa3c98c7e8754f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a059920de227470b8acf5272714a133a = $(`<div id="html_a059920de227470b8acf5272714a133a" style="width: 100.0%; height: 100.0%;">San Francisco Caltrain (Townsend St at 4th St)</div>`)[0];
+            popup_444b64dfe975455aa1aa3c98c7e8754f.setContent(html_a059920de227470b8acf5272714a133a);
+        
+
+        marker_11ce53d54a5240179bfdf5ab33cd3fff.bindPopup(popup_444b64dfe975455aa1aa3c98c7e8754f)
+        ;
+
+        
+    
+    
+            marker_11ce53d54a5240179bfdf5ab33cd3fff.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28c0342da3fa4b52a6554874e4dc4ab2 = L.marker(
+                [37.7896254, -122.400811],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_87ea17c5be264522bc506365f958f06b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_28c0342da3fa4b52a6554874e4dc4ab2.setIcon(icon_87ea17c5be264522bc506365f958f06b);
+        
+    
+        var popup_56cb2f40e33240d0b81b4bd1b4927abe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_544cd811976445f78ff746da2df801e3 = $(`<div id="html_544cd811976445f78ff746da2df801e3" style="width: 100.0%; height: 100.0%;">Montgomery St BART Station (Market St at 2nd St)</div>`)[0];
+            popup_56cb2f40e33240d0b81b4bd1b4927abe.setContent(html_544cd811976445f78ff746da2df801e3);
+        
+
+        marker_28c0342da3fa4b52a6554874e4dc4ab2.bindPopup(popup_56cb2f40e33240d0b81b4bd1b4927abe)
+        ;
+
+        
+    
+    
+            marker_28c0342da3fa4b52a6554874e4dc4ab2.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ceed727af494cfcad50d06bd7b33c59 = L.marker(
+                [37.795392, -122.394203],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_c900094d86044e8388ce983e425ddfdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1ceed727af494cfcad50d06bd7b33c59.setIcon(icon_c900094d86044e8388ce983e425ddfdc);
+        
+    
+        var popup_86544ac4f6454f798e20747a2498ca00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9e4b37dc6b74e1d8ddf5b1713132408 = $(`<div id="html_d9e4b37dc6b74e1d8ddf5b1713132408" style="width: 100.0%; height: 100.0%;">San Francisco Ferry Building (Harry Bridges Plaza)</div>`)[0];
+            popup_86544ac4f6454f798e20747a2498ca00.setContent(html_d9e4b37dc6b74e1d8ddf5b1713132408);
+        
+
+        marker_1ceed727af494cfcad50d06bd7b33c59.bindPopup(popup_86544ac4f6454f798e20747a2498ca00)
+        ;
+
+        
+    
+    
+            marker_1ceed727af494cfcad50d06bd7b33c59.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cd5bc693e5e4b2c912ca17e15f729e4 = L.marker(
+                [37.79413, -122.39443],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_0689ab669b014f9895a2ffd98a19fbbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_5cd5bc693e5e4b2c912ca17e15f729e4.setIcon(icon_0689ab669b014f9895a2ffd98a19fbbf);
+        
+    
+        var popup_5fdd164ea2ad4c6f861d3ff557719160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c2879a03b9149d4844069d804a12209 = $(`<div id="html_9c2879a03b9149d4844069d804a12209" style="width: 100.0%; height: 100.0%;">Steuart St at Market St</div>`)[0];
+            popup_5fdd164ea2ad4c6f861d3ff557719160.setContent(html_9c2879a03b9149d4844069d804a12209);
+        
+
+        marker_5cd5bc693e5e4b2c912ca17e15f729e4.bindPopup(popup_5fdd164ea2ad4c6f861d3ff557719160)
+        ;
+
+        
+    
+    
+            marker_5cd5bc693e5e4b2c912ca17e15f729e4.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d988af424dcf406a82bfa51712ca76f4 = L.marker(
+                [37.786375268600004, -122.40490436549999],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_98eb03b227524a0a99dfd21c2b71a569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_d988af424dcf406a82bfa51712ca76f4.setIcon(icon_98eb03b227524a0a99dfd21c2b71a569);
+        
+    
+        var popup_11b0cd9759be4d5ba3374fd1f869aff0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a85dccf9ff7f4a33a34478d89091758f = $(`<div id="html_a85dccf9ff7f4a33a34478d89091758f" style="width: 100.0%; height: 100.0%;">Powell St BART Station (Market St at 4th St)</div>`)[0];
+            popup_11b0cd9759be4d5ba3374fd1f869aff0.setContent(html_a85dccf9ff7f4a33a34478d89091758f);
+        
+
+        marker_d988af424dcf406a82bfa51712ca76f4.bindPopup(popup_11b0cd9759be4d5ba3374fd1f869aff0)
+        ;
+
+        
+    
+    
+            marker_d988af424dcf406a82bfa51712ca76f4.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b9099cae2604646a2ad31c50e04233d = L.marker(
+                [37.789756, -122.394643],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_9ccc4416d9ad490c9ef516a58827c786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_5b9099cae2604646a2ad31c50e04233d.setIcon(icon_9ccc4416d9ad490c9ef516a58827c786);
+        
+    
+        var popup_73dac4b982764cdd8d5899cf18e8472f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e678fc9526b54854a4dd22beb54318c5 = $(`<div id="html_e678fc9526b54854a4dd22beb54318c5" style="width: 100.0%; height: 100.0%;">Howard St at Beale St</div>`)[0];
+            popup_73dac4b982764cdd8d5899cf18e8472f.setContent(html_e678fc9526b54854a4dd22beb54318c5);
+        
+
+        marker_5b9099cae2604646a2ad31c50e04233d.bindPopup(popup_73dac4b982764cdd8d5899cf18e8472f)
+        ;
+
+        
+    
+    
+            marker_5b9099cae2604646a2ad31c50e04233d.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4da8a8e426f24dec8816e231928f3e4e = L.marker(
+                [37.7838993571, -122.40844488139999],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_ac8783eee61b4a06a9d25cda9a95c53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_4da8a8e426f24dec8816e231928f3e4e.setIcon(icon_ac8783eee61b4a06a9d25cda9a95c53d);
+        
+    
+        var popup_1241d3d17bd14afbad49bfd5b147b6cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73bc2478033c4addb33738cf7f57f15e = $(`<div id="html_73bc2478033c4addb33738cf7f57f15e" style="width: 100.0%; height: 100.0%;">Powell St BART Station (Market St at 5th St)</div>`)[0];
+            popup_1241d3d17bd14afbad49bfd5b147b6cf.setContent(html_73bc2478033c4addb33738cf7f57f15e);
+        
+
+        marker_4da8a8e426f24dec8816e231928f3e4e.bindPopup(popup_1241d3d17bd14afbad49bfd5b147b6cf)
+        ;
+
+        
+    
+    
+            marker_4da8a8e426f24dec8816e231928f3e4e.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4df33153824d44b8919e5616a7ea77e1 = L.marker(
+                [37.780526, -122.39028799999998],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_d67e4fa593864371ae0f22722a4d0979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_4df33153824d44b8919e5616a7ea77e1.setIcon(icon_d67e4fa593864371ae0f22722a4d0979);
+        
+    
+        var popup_9e19118f4ff341fe8d40c241218c4295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6af89106c9843eeae0bfeff58125747 = $(`<div id="html_c6af89106c9843eeae0bfeff58125747" style="width: 100.0%; height: 100.0%;">2nd St at Townsend St</div>`)[0];
+            popup_9e19118f4ff341fe8d40c241218c4295.setContent(html_c6af89106c9843eeae0bfeff58125747);
+        
+
+        marker_4df33153824d44b8919e5616a7ea77e1.bindPopup(popup_9e19118f4ff341fe8d40c241218c4295)
+        ;
+
+        
+    
+    
+            marker_4df33153824d44b8919e5616a7ea77e1.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d47b167f5ff247b38758a0ec13edb1d9 = L.marker(
+                [37.80477, -122.403234],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_792d2fd13dc140c2879568544c0b93fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_d47b167f5ff247b38758a0ec13edb1d9.setIcon(icon_792d2fd13dc140c2879568544c0b93fc);
+        
+    
+        var popup_e69de763c8b244a79dd77dd80fe5736a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66f7636eb2cc46b3baf4f1be74480e3a = $(`<div id="html_66f7636eb2cc46b3baf4f1be74480e3a" style="width: 100.0%; height: 100.0%;">The Embarcadero at Sansome St</div>`)[0];
+            popup_e69de763c8b244a79dd77dd80fe5736a.setContent(html_66f7636eb2cc46b3baf4f1be74480e3a);
+        
+
+        marker_d47b167f5ff247b38758a0ec13edb1d9.bindPopup(popup_e69de763c8b244a79dd77dd80fe5736a)
+        ;
+
+        
+    
+    
+            marker_d47b167f5ff247b38758a0ec13edb1d9.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7028a49ba64245ef8163c08b62caeee8 = L.marker(
+                [37.792251, -122.39708600000002],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_bf3d8db388224f68951065d5932effb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7028a49ba64245ef8163c08b62caeee8.setIcon(icon_bf3d8db388224f68951065d5932effb9);
+        
+    
+        var popup_5d8f3da237c7402788eec06affbb3594 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d8152efc6ce40fcb793a5fddcbbb965 = $(`<div id="html_4d8152efc6ce40fcb793a5fddcbbb965" style="width: 100.0%; height: 100.0%;">Embarcadero BART Station (Beale St at Market St)</div>`)[0];
+            popup_5d8f3da237c7402788eec06affbb3594.setContent(html_4d8152efc6ce40fcb793a5fddcbbb965);
+        
+
+        marker_7028a49ba64245ef8163c08b62caeee8.bindPopup(popup_5d8f3da237c7402788eec06affbb3594)
+        ;
+
+        
+    
+    
+            marker_7028a49ba64245ef8163c08b62caeee8.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34d34014fcf343ba962c362f114e5cc8 = L.marker(
+                [37.7787416115, -122.39274082709998],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_a7a23a47a992469aa94fe8fbe945ffd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_34d34014fcf343ba962c362f114e5cc8.setIcon(icon_a7a23a47a992469aa94fe8fbe945ffd6);
+        
+    
+        var popup_b750ed1d242e4340b5b20e9c6f254c0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ca3109c10a34ac689f72be0ac090e8e = $(`<div id="html_3ca3109c10a34ac689f72be0ac090e8e" style="width: 100.0%; height: 100.0%;">3rd St at Townsend St</div>`)[0];
+            popup_b750ed1d242e4340b5b20e9c6f254c0d.setContent(html_3ca3109c10a34ac689f72be0ac090e8e);
+        
+
+        marker_34d34014fcf343ba962c362f114e5cc8.bindPopup(popup_b750ed1d242e4340b5b20e9c6f254c0d)
+        ;
+
+        
+    
+    
+            marker_34d34014fcf343ba962c362f114e5cc8.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a44208f9b8e40cdbd725010c67161fb = L.marker(
+                [37.7880593, -122.3918648],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_748097c4294746bbab252f3a7c7ef6ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8a44208f9b8e40cdbd725010c67161fb.setIcon(icon_748097c4294746bbab252f3a7c7ef6ef);
+        
+    
+        var popup_986fed9e2c57435b81b822e5bf451cae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6b8701e61274ff39ab6c30b35124679 = $(`<div id="html_a6b8701e61274ff39ab6c30b35124679" style="width: 100.0%; height: 100.0%;">Beale St at Harrison St</div>`)[0];
+            popup_986fed9e2c57435b81b822e5bf451cae.setContent(html_a6b8701e61274ff39ab6c30b35124679);
+        
+
+        marker_8a44208f9b8e40cdbd725010c67161fb.bindPopup(popup_986fed9e2c57435b81b822e5bf451cae)
+        ;
+
+        
+    
+    
+            marker_8a44208f9b8e40cdbd725010c67161fb.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96a44e28c62042e19db26b906dc1013f = L.marker(
+                [37.771058, -122.402717],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_345d66fc910a43708a57e6077de1c4ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_96a44e28c62042e19db26b906dc1013f.setIcon(icon_345d66fc910a43708a57e6077de1c4ca);
+        
+    
+        var popup_cf5231cc411c44588b5783ee42c56598 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14d95b1887494f4a9e0e39cac7cc61e2 = $(`<div id="html_14d95b1887494f4a9e0e39cac7cc61e2" style="width: 100.0%; height: 100.0%;">Townsend St at 7th St</div>`)[0];
+            popup_cf5231cc411c44588b5783ee42c56598.setContent(html_14d95b1887494f4a9e0e39cac7cc61e2);
+        
+
+        marker_96a44e28c62042e19db26b906dc1013f.bindPopup(popup_cf5231cc411c44588b5783ee42c56598)
+        ;
+
+        
+    
+    
+            marker_96a44e28c62042e19db26b906dc1013f.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db339a446a4e495e85a2eb2fb7711285 = L.marker(
+                [37.7704074, -122.39119840000002],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_d54832fc60b348358cbc06a6e402b608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_db339a446a4e495e85a2eb2fb7711285.setIcon(icon_d54832fc60b348358cbc06a6e402b608);
+        
+    
+        var popup_ebc5ebbda26c4aafac2a4f097f215696 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_596aab138e9046fba6b831b77a5695b5 = $(`<div id="html_596aab138e9046fba6b831b77a5695b5" style="width: 100.0%; height: 100.0%;">4th St at Mission Bay Blvd S</div>`)[0];
+            popup_ebc5ebbda26c4aafac2a4f097f215696.setContent(html_596aab138e9046fba6b831b77a5695b5);
+        
+
+        marker_db339a446a4e495e85a2eb2fb7711285.bindPopup(popup_ebc5ebbda26c4aafac2a4f097f215696)
+        ;
+
+        
+    
+    
+            marker_db339a446a4e495e85a2eb2fb7711285.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2e2b726b698475d875052270481402b = L.marker(
+                [37.7810737, -122.4117382],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_f247dc748b6f4c0fb9b3388c4c5e89f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_d2e2b726b698475d875052270481402b.setIcon(icon_f247dc748b6f4c0fb9b3388c4c5e89f4);
+        
+    
+        var popup_f6c2a267a33b40be8eb612cc23cbeae0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1610a55e3e204f64951e192e62179f75 = $(`<div id="html_1610a55e3e204f64951e192e62179f75" style="width: 100.0%; height: 100.0%;">Civic Center/UN Plaza BART Station (Market St at McAllister St)</div>`)[0];
+            popup_f6c2a267a33b40be8eb612cc23cbeae0.setContent(html_1610a55e3e204f64951e192e62179f75);
+        
+
+        marker_d2e2b726b698475d875052270481402b.bindPopup(popup_f6c2a267a33b40be8eb612cc23cbeae0)
+        ;
+
+        
+    
+    
+            marker_d2e2b726b698475d875052270481402b.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e36ac51ee27647ddb052074f82c37d4a = L.marker(
+                [37.79146400000001, -122.391034],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_c24916a8c5a042e38bcbbebb1d064557 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e36ac51ee27647ddb052074f82c37d4a.setIcon(icon_c24916a8c5a042e38bcbbebb1d064557);
+        
+    
+        var popup_50ea73cdb83f4cdfa61130b6bf7d72a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6661e505643e4938bc89191b78edd6a9 = $(`<div id="html_6661e505643e4938bc89191b78edd6a9" style="width: 100.0%; height: 100.0%;">The Embarcadero at Steuart St</div>`)[0];
+            popup_50ea73cdb83f4cdfa61130b6bf7d72a9.setContent(html_6661e505643e4938bc89191b78edd6a9);
+        
+
+        marker_e36ac51ee27647ddb052074f82c37d4a.bindPopup(popup_50ea73cdb83f4cdfa61130b6bf7d72a9)
+        ;
+
+        
+    
+    
+            marker_e36ac51ee27647ddb052074f82c37d4a.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8271149799b64cbd9c6ec0556a191e1d = L.marker(
+                [37.7670445797, -122.390833497],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_8ace907997954908a208b034ab6305eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8271149799b64cbd9c6ec0556a191e1d.setIcon(icon_8ace907997954908a208b034ab6305eb);
+        
+    
+        var popup_afa3b382ba914812a0c42ee8dad83424 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1472d9260df24edcb5ad2b7e6d2d3288 = $(`<div id="html_1472d9260df24edcb5ad2b7e6d2d3288" style="width: 100.0%; height: 100.0%;">4th St at 16th St</div>`)[0];
+            popup_afa3b382ba914812a0c42ee8dad83424.setContent(html_1472d9260df24edcb5ad2b7e6d2d3288);
+        
+
+        marker_8271149799b64cbd9c6ec0556a191e1d.bindPopup(popup_afa3b382ba914812a0c42ee8dad83424)
+        ;
+
+        
+    
+    
+            marker_8271149799b64cbd9c6ec0556a191e1d.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffb24ff9b7d347688179ced1212565ce = L.marker(
+                [37.7765126, -122.4113061],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_9d2224911627432396186fb4dbc18871 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ffb24ff9b7d347688179ced1212565ce.setIcon(icon_9d2224911627432396186fb4dbc18871);
+        
+    
+        var popup_8b5d3cd27880437f8ae0770263c24198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9df599d19a7462198e3a8ee9e668669 = $(`<div id="html_b9df599d19a7462198e3a8ee9e668669" style="width: 100.0%; height: 100.0%;">Howard St at 8th St</div>`)[0];
+            popup_8b5d3cd27880437f8ae0770263c24198.setContent(html_b9df599d19a7462198e3a8ee9e668669);
+        
+
+        marker_ffb24ff9b7d347688179ced1212565ce.bindPopup(popup_8b5d3cd27880437f8ae0770263c24198)
+        ;
+
+        
+    
+    
+            marker_ffb24ff9b7d347688179ced1212565ce.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35431feb87784418a69be565db38d5d9 = L.marker(
+                [37.8693603, -122.2543374],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_f596be096de8483e86645039bf734906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_35431feb87784418a69be565db38d5d9.setIcon(icon_f596be096de8483e86645039bf734906);
+        
+    
+        var popup_82d2ed67fe3a41a187882b3933bd0a25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea49b7b84a3d46c88c2f61031689eabd = $(`<div id="html_ea49b7b84a3d46c88c2f61031689eabd" style="width: 100.0%; height: 100.0%;">Bancroft Way at College Ave</div>`)[0];
+            popup_82d2ed67fe3a41a187882b3933bd0a25.setContent(html_ea49b7b84a3d46c88c2f61031689eabd);
+        
+
+        marker_35431feb87784418a69be565db38d5d9.bindPopup(popup_82d2ed67fe3a41a187882b3933bd0a25)
+        ;
+
+        
+    
+    
+            marker_35431feb87784418a69be565db38d5d9.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6627370cbde48b28d18cb495d64cf08 = L.marker(
+                [37.7644783, -122.4025701],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_17e7d253a2e74eaf9ddbb17af64ea152 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_f6627370cbde48b28d18cb495d64cf08.setIcon(icon_17e7d253a2e74eaf9ddbb17af64ea152);
+        
+    
+        var popup_632213166e0848eeb435536682f23c0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b625c3f4480d49fb9e774e48b3592042 = $(`<div id="html_b625c3f4480d49fb9e774e48b3592042" style="width: 100.0%; height: 100.0%;">Rhode Island St at 17th St</div>`)[0];
+            popup_632213166e0848eeb435536682f23c0b.setContent(html_b625c3f4480d49fb9e774e48b3592042);
+        
+
+        marker_f6627370cbde48b28d18cb495d64cf08.bindPopup(popup_632213166e0848eeb435536682f23c0b)
+        ;
+
+        
+    
+    
+            marker_f6627370cbde48b28d18cb495d64cf08.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7a6ae3447ad442cabd88a4af7a15fd6 = L.marker(
+                [37.788975, -122.403452],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_43c380f055ba4524b495be647ffd76ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e7a6ae3447ad442cabd88a4af7a15fd6.setIcon(icon_43c380f055ba4524b495be647ffd76ad);
+        
+    
+        var popup_d1e57c6e0496405897683cf73d6bd77d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11cb9ebaa40c4f55b769ca5bb4d52564 = $(`<div id="html_11cb9ebaa40c4f55b769ca5bb4d52564" style="width: 100.0%; height: 100.0%;">Post St at Kearny St</div>`)[0];
+            popup_d1e57c6e0496405897683cf73d6bd77d.setContent(html_11cb9ebaa40c4f55b769ca5bb4d52564);
+        
+
+        marker_e7a6ae3447ad442cabd88a4af7a15fd6.bindPopup(popup_d1e57c6e0496405897683cf73d6bd77d)
+        ;
+
+        
+    
+    
+            marker_e7a6ae3447ad442cabd88a4af7a15fd6.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84d3c0d5ca05473d87b7b842b2104319 = L.marker(
+                [37.8688126, -122.258764],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_6f42c6c03b454e378a98ba4ec4b1de5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_84d3c0d5ca05473d87b7b842b2104319.setIcon(icon_6f42c6c03b454e378a98ba4ec4b1de5a);
+        
+    
+        var popup_b9972384ccf64fa2b018a2d5005017af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb1ae3b302b34dde94194ada1c49b942 = $(`<div id="html_cb1ae3b302b34dde94194ada1c49b942" style="width: 100.0%; height: 100.0%;">Bancroft Way at Telegraph Ave</div>`)[0];
+            popup_b9972384ccf64fa2b018a2d5005017af.setContent(html_cb1ae3b302b34dde94194ada1c49b942);
+        
+
+        marker_84d3c0d5ca05473d87b7b842b2104319.bindPopup(popup_b9972384ccf64fa2b018a2d5005017af)
+        ;
+
+        
+    
+    
+            marker_84d3c0d5ca05473d87b7b842b2104319.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_568c979eb86b4d0aad673dab6a5551be = L.marker(
+                [37.7714313629, -122.4057868123],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_95c2e53df75642d38de951452c15caa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_568c979eb86b4d0aad673dab6a5551be.setIcon(icon_95c2e53df75642d38de951452c15caa1);
+        
+    
+        var popup_a7d574ba73ef4b3f90378fbe7493ad3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1c492b7615e4b5f826de6b2b0d5c5b1 = $(`<div id="html_d1c492b7615e4b5f826de6b2b0d5c5b1" style="width: 100.0%; height: 100.0%;">8th St at Brannan St</div>`)[0];
+            popup_a7d574ba73ef4b3f90378fbe7493ad3e.setContent(html_d1c492b7615e4b5f826de6b2b0d5c5b1);
+        
+
+        marker_568c979eb86b4d0aad673dab6a5551be.bindPopup(popup_a7d574ba73ef4b3f90378fbe7493ad3e)
+        ;
+
+        
+    
+    
+            marker_568c979eb86b4d0aad673dab6a5551be.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc50b640ef8342f290b5f440e0dbda1a = L.marker(
+                [37.7752348686, -122.3974370956],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_4a2e913449724aaca17c26527e19b9f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_fc50b640ef8342f290b5f440e0dbda1a.setIcon(icon_4a2e913449724aaca17c26527e19b9f6);
+        
+    
+        var popup_d5b9f9ccaaf3469fbacf76a913e9f719 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e50715e710e44c2bb4f42b01b881516 = $(`<div id="html_8e50715e710e44c2bb4f42b01b881516" style="width: 100.0%; height: 100.0%;">Townsend St at 5th St</div>`)[0];
+            popup_d5b9f9ccaaf3469fbacf76a913e9f719.setContent(html_8e50715e710e44c2bb4f42b01b881516);
+        
+
+        marker_fc50b640ef8342f290b5f440e0dbda1a.bindPopup(popup_d5b9f9ccaaf3469fbacf76a913e9f719)
+        ;
+
+        
+    
+    
+            marker_fc50b640ef8342f290b5f440e0dbda1a.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f8cf17c445847d5a9c9dff20ad69fb2 = L.marker(
+                [37.7831719893, -122.3935720325],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_91fcc1b24ccd4cf39a5a3c144c2eca90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_3f8cf17c445847d5a9c9dff20ad69fb2.setIcon(icon_91fcc1b24ccd4cf39a5a3c144c2eca90);
+        
+    
+        var popup_0c144c7fb2c54128a7ad4a3283c272df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fae9e5b7f76647fe991cbab7fd0bcb8e = $(`<div id="html_fae9e5b7f76647fe991cbab7fd0bcb8e" style="width: 100.0%; height: 100.0%;">Bryant St at 2nd St</div>`)[0];
+            popup_0c144c7fb2c54128a7ad4a3283c272df.setContent(html_fae9e5b7f76647fe991cbab7fd0bcb8e);
+        
+
+        marker_3f8cf17c445847d5a9c9dff20ad69fb2.bindPopup(popup_0c144c7fb2c54128a7ad4a3283c272df)
+        ;
+
+        
+    
+    
+            marker_3f8cf17c445847d5a9c9dff20ad69fb2.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a1f7a6abc9443a79fd22a13035876bb = L.marker(
+                [37.7745204011, -122.40944936870001],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_eab19834537c4b51845bf67bdd008a21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_4a1f7a6abc9443a79fd22a13035876bb.setIcon(icon_eab19834537c4b51845bf67bdd008a21);
+        
+    
+        var popup_a4494266445a476890d3da4cae28930f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a407f2682514fb69de91f884f499001 = $(`<div id="html_1a407f2682514fb69de91f884f499001" style="width: 100.0%; height: 100.0%;">8th St at Ringold St</div>`)[0];
+            popup_a4494266445a476890d3da4cae28930f.setContent(html_1a407f2682514fb69de91f884f499001);
+        
+
+        marker_4a1f7a6abc9443a79fd22a13035876bb.bindPopup(popup_a4494266445a476890d3da4cae28930f)
+        ;
+
+        
+    
+    
+            marker_4a1f7a6abc9443a79fd22a13035876bb.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56268ef809544be9a9033cdcef6998e7 = L.marker(
+                [37.870139, -122.268422],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_82b6b9b4ccbc472bbc82e685a4549e7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_56268ef809544be9a9033cdcef6998e7.setIcon(icon_82b6b9b4ccbc472bbc82e685a4549e7d);
+        
+    
+        var popup_3f3b6f68b2e54f4882f1f737a1067ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a8f0b3530484a0196114c05d5db2009 = $(`<div id="html_1a8f0b3530484a0196114c05d5db2009" style="width: 100.0%; height: 100.0%;">Downtown Berkeley BART</div>`)[0];
+            popup_3f3b6f68b2e54f4882f1f737a1067ed0.setContent(html_1a8f0b3530484a0196114c05d5db2009);
+        
+
+        marker_56268ef809544be9a9033cdcef6998e7.bindPopup(popup_3f3b6f68b2e54f4882f1f737a1067ed0)
+        ;
+
+        
+    
+    
+            marker_56268ef809544be9a9033cdcef6998e7.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccce3751ad7447a9a59cfe04e45494bf = L.marker(
+                [37.7787677, -122.4159292],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_79fe41722be043b483a2cbc724562c05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ccce3751ad7447a9a59cfe04e45494bf.setIcon(icon_79fe41722be043b483a2cbc724562c05);
+        
+    
+        var popup_26936802ea67482f900b248134024640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8116ab1a7e724a61af54de4cedea91a4 = $(`<div id="html_8116ab1a7e724a61af54de4cedea91a4" style="width: 100.0%; height: 100.0%;">San Francisco Public Library (Grove St at Hyde St)</div>`)[0];
+            popup_26936802ea67482f900b248134024640.setContent(html_8116ab1a7e724a61af54de4cedea91a4);
+        
+
+        marker_ccce3751ad7447a9a59cfe04e45494bf.bindPopup(popup_26936802ea67482f900b248134024640)
+        ;
+
+        
+    
+    
+            marker_ccce3751ad7447a9a59cfe04e45494bf.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efcee320e72342c4b827bee5753db919 = L.marker(
+                [37.78967670000001, -122.39042849999998],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_3463fa69092c437ca144f9bf338401cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_efcee320e72342c4b827bee5753db919.setIcon(icon_3463fa69092c437ca144f9bf338401cd);
+        
+    
+        var popup_c2772df6da4648889ac3c626423c1246 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45b8468d63994f74a83360b03b5c5b2a = $(`<div id="html_45b8468d63994f74a83360b03b5c5b2a" style="width: 100.0%; height: 100.0%;">Spear St at Folsom St</div>`)[0];
+            popup_c2772df6da4648889ac3c626423c1246.setContent(html_45b8468d63994f74a83360b03b5c5b2a);
+        
+
+        marker_efcee320e72342c4b827bee5753db919.bindPopup(popup_c2772df6da4648889ac3c626423c1246)
+        ;
+
+        
+    
+    
+            marker_efcee320e72342c4b827bee5753db919.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed22bebbb0b04963ad1c9129291d102f = L.marker(
+                [37.7692178615, -122.4076455832],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_15393eeb50074fa483674900067af5f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ed22bebbb0b04963ad1c9129291d102f.setIcon(icon_15393eeb50074fa483674900067af5f2);
+        
+    
+        var popup_2f41ea0abd4c49d685b4941846fcbb77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84d5b0112fc34770b50c274df5d518ed = $(`<div id="html_84d5b0112fc34770b50c274df5d518ed" style="width: 100.0%; height: 100.0%;">Division St at Potrero Ave</div>`)[0];
+            popup_2f41ea0abd4c49d685b4941846fcbb77.setContent(html_84d5b0112fc34770b50c274df5d518ed);
+        
+
+        marker_ed22bebbb0b04963ad1c9129291d102f.bindPopup(popup_2f41ea0abd4c49d685b4941846fcbb77)
+        ;
+
+        
+    
+    
+            marker_ed22bebbb0b04963ad1c9129291d102f.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b68d43f13a74e449e2cfa2f147f4ab5 = L.marker(
+                [37.8090126, -122.2682473],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_5dbc4d4d15364f11944204b5a831def2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_9b68d43f13a74e449e2cfa2f147f4ab5.setIcon(icon_5dbc4d4d15364f11944204b5a831def2);
+        
+    
+        var popup_6d44dc5cf36e4e728a80586fc716ebfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b378c63f1f8c4d2491a68f7f3698b55b = $(`<div id="html_b378c63f1f8c4d2491a68f7f3698b55b" style="width: 100.0%; height: 100.0%;">19th Street BART Station</div>`)[0];
+            popup_6d44dc5cf36e4e728a80586fc716ebfc.setContent(html_b378c63f1f8c4d2491a68f7f3698b55b);
+        
+
+        marker_9b68d43f13a74e449e2cfa2f147f4ab5.bindPopup(popup_6d44dc5cf36e4e728a80586fc716ebfc)
+        ;
+
+        
+    
+    
+            marker_9b68d43f13a74e449e2cfa2f147f4ab5.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_464effafee0c42279e854c633cf7f0e5 = L.marker(
+                [37.7647652155, -122.42009103299999],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_9be1b57f04094579976222b138795bef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_464effafee0c42279e854c633cf7f0e5.setIcon(icon_9be1b57f04094579976222b138795bef);
+        
+    
+        var popup_c9f61bb961e24ac1a95d6db112328fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e5fa92a17d846388d69511e5dd8f77c = $(`<div id="html_6e5fa92a17d846388d69511e5dd8f77c" style="width: 100.0%; height: 100.0%;">16th St Mission BART Station 2</div>`)[0];
+            popup_c9f61bb961e24ac1a95d6db112328fd9.setContent(html_6e5fa92a17d846388d69511e5dd8f77c);
+        
+
+        marker_464effafee0c42279e854c633cf7f0e5.bindPopup(popup_c9f61bb961e24ac1a95d6db112328fd9)
+        ;
+
+        
+    
+    
+            marker_464effafee0c42279e854c633cf7f0e5.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e850544860741acaca6d86b6a894f78 = L.marker(
+                [37.7616343, -122.3906477],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_6ec60a04618a4eb99f11e2208df4135d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1e850544860741acaca6d86b6a894f78.setIcon(icon_6ec60a04618a4eb99f11e2208df4135d);
+        
+    
+        var popup_19158f377f35412e91f8308fa49e0a10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7980d12bd7e04af8b66b9e424248c343 = $(`<div id="html_7980d12bd7e04af8b66b9e424248c343" style="width: 100.0%; height: 100.0%;">Esprit Park</div>`)[0];
+            popup_19158f377f35412e91f8308fa49e0a10.setContent(html_7980d12bd7e04af8b66b9e424248c343);
+        
+
+        marker_1e850544860741acaca6d86b6a894f78.bindPopup(popup_19158f377f35412e91f8308fa49e0a10)
+        ;
+
+        
+    
+    
+            marker_1e850544860741acaca6d86b6a894f78.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93ac4c1fe2924c6e8d45f446d95de8eb = L.marker(
+                [37.8284099731, -122.26631462569999],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_f6edb45215a94fa49fee433bc129704a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_93ac4c1fe2924c6e8d45f446d95de8eb.setIcon(icon_f6edb45215a94fa49fee433bc129704a);
+        
+    
+        var popup_4b70cd817d554a9c8b5122caf022a6a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c036dbb714b487cbf1e5423cbfa9cc5 = $(`<div id="html_4c036dbb714b487cbf1e5423cbfa9cc5" style="width: 100.0%; height: 100.0%;">MacArthur BART Station</div>`)[0];
+            popup_4b70cd817d554a9c8b5122caf022a6a3.setContent(html_4c036dbb714b487cbf1e5423cbfa9cc5);
+        
+
+        marker_93ac4c1fe2924c6e8d45f446d95de8eb.bindPopup(popup_4b70cd817d554a9c8b5122caf022a6a3)
+        ;
+
+        
+    
+    
+            marker_93ac4c1fe2924c6e8d45f446d95de8eb.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91be6a150e014d91a357413f04bdc610 = L.marker(
+                [37.7913, -122.399051],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_2b850966f9994fb7b3240689afae03b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_91be6a150e014d91a357413f04bdc610.setIcon(icon_2b850966f9994fb7b3240689afae03b5);
+        
+    
+        var popup_77f622b1da3c43c289330fcc38e98234 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_904f281809e64276b8caae046db4bfad = $(`<div id="html_904f281809e64276b8caae046db4bfad" style="width: 100.0%; height: 100.0%;">Mechanics Monument Plaza (Market St at Bush St)</div>`)[0];
+            popup_77f622b1da3c43c289330fcc38e98234.setContent(html_904f281809e64276b8caae046db4bfad);
+        
+
+        marker_91be6a150e014d91a357413f04bdc610.bindPopup(popup_77f622b1da3c43c289330fcc38e98234)
+        ;
+
+        
+    
+    
+            marker_91be6a150e014d91a357413f04bdc610.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9193deae41a4627b6f66e116ea22c99 = L.marker(
+                [37.7801457035, -122.40307085239999],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_0ebfcbaf0aea4f7e8dad57849d9f9bd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_f9193deae41a4627b6f66e116ea22c99.setIcon(icon_0ebfcbaf0aea4f7e8dad57849d9f9bd4);
+        
+    
+        var popup_19d67539b0964ffcb260c978e61234ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8834e6a6bec9478381e2b240e174b1fb = $(`<div id="html_8834e6a6bec9478381e2b240e174b1fb" style="width: 100.0%; height: 100.0%;">5th St at Folsom</div>`)[0];
+            popup_19d67539b0964ffcb260c978e61234ce.setContent(html_8834e6a6bec9478381e2b240e174b1fb);
+        
+
+        marker_f9193deae41a4627b6f66e116ea22c99.bindPopup(popup_19d67539b0964ffcb260c978e61234ce)
+        ;
+
+        
+    
+    
+            marker_f9193deae41a4627b6f66e116ea22c99.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00a8acec69ff41768899711295cc6b9b = L.marker(
+                [37.774814, -122.418954],
+                {}
+            ).addTo(map_9b0e6bbf24414819aed63742c118b027);
+        
+    
+            var icon_1ba31ef34419469f8693aa708f8800d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "red", "iconSize": [0, 0], "markerColor": "black", "prefix": "fa"}
+            );
+            marker_00a8acec69ff41768899711295cc6b9b.setIcon(icon_1ba31ef34419469f8693aa708f8800d5);
+        
+    
+        var popup_cf67f97789f545bfac5d8506f63dafa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05a2ef94304e4b0383295adbd8cb53dc = $(`<div id="html_05a2ef94304e4b0383295adbd8cb53dc" style="width: 100.0%; height: 100.0%;">S Van Ness Ave at Market St</div>`)[0];
+            popup_cf67f97789f545bfac5d8506f63dafa3.setContent(html_05a2ef94304e4b0383295adbd8cb53dc);
+        
+
+        marker_00a8acec69ff41768899711295cc6b9b.bindPopup(popup_cf67f97789f545bfac5d8506f63dafa3)
+        ;
+
+        
+    
+    
+            marker_00a8acec69ff41768899711295cc6b9b.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
